@@ -56,7 +56,7 @@ public class SlashSwapperPlugin extends Plugin
 				final int intStackSize = client.getIntStackSize();
 				intStack[intStackSize - 1] = clanChatInt;
 				intStack[intStackSize - 2] = 1;
-				System.out.println("First");
+
 				return;
 			}
 
@@ -65,7 +65,7 @@ public class SlashSwapperPlugin extends Plugin
 				final int intStackSize = client.getIntStackSize();
 				intStack[intStackSize - 1] = clanChatInt;
 				intStack[intStackSize - 2] = 1;
-				System.out.println("Second");
+
 
 				return;
 			}
@@ -77,7 +77,7 @@ public class SlashSwapperPlugin extends Plugin
 				intStack[intStackSize - 1] = friendsChatInt;
 				intStack[intStackSize - 2] = 0;
 				client.setVar(VarClientStr.CHATBOX_TYPED_TEXT,chatboxInput.substring(2));
-				System.out.println("Third");
+
 
 				return;
 			}
