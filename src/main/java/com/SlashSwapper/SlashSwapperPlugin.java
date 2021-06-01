@@ -48,17 +48,7 @@ public class SlashSwapperPlugin extends Plugin
 
 			}
 
-
-			if(chatboxInput.length() == 2 && chatboxInput.charAt(0)=='/' && chatboxInput.charAt(1) != '/'){
-				int[] intStack = client.getIntStack();
-				final int intStackSize = client.getIntStackSize();
-				intStack[intStackSize - 1] = clanChatInt;
-				intStack[intStackSize - 2] = 1;
-
-				return;
-			}
-
-			if(chatboxInput.length()>2 && chatboxInput.charAt(0)=='/' && chatboxInput.charAt(1) != '/'){
+			if(chatboxInput.length()>=2 && chatboxInput.charAt(0)=='/' && chatboxInput.charAt(1) != '/'){
 				int[] intStack = client.getIntStack();
 				final int intStackSize = client.getIntStackSize();
 				intStack[intStackSize - 1] = clanChatInt;
